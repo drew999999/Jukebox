@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>JukeboxProject</title>
+   <link rel="stylesheet" type="text/css" href="jukebox.css">
+ </head>
+ <body>
+   <div class="audio-player-cont">
+
+     width: 300px;
+     padding: 5px 0px 0px<div class="logo">
+     <img src="Vinyl_Rocket_Jukebox-8.jpg"> // They Call Him Mr.Music
+   </div>
+   <div class="player">
+     <div id="songTitle" class="song-title">My Song title goes here</div>
+     <input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="seekSong()" />
+     <div>
+       <div id="currentTime" class="current-time">00:00</div>
+       <div id="duration" class="duration">00:00</div>
+     </div>
+     <div class="controllers">
+       <img src="previousbutton.png"  width="30px" onclick="previous();" />
+       <img src="backwardbutton.png"  width="30px" onclick="decreasePlaybackRate();" />
+       <img src="pausebutton.png"  width="40px" onclick="playOrPauseSong(this);" />
+       <img src="forwardbutton.png"  width="30px" onclick="increasePlaybackRate();" />
+       <img src="nextbutton.png"  width="30px" onclick="next();" />
+       <img src="volumedown.png"  width="15px" />
+
+       <input id="VolumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.1" onchange="adjustVolume()" />
+       <img src="volumeUp.png"  width="15px" style="margin-left:2px;" />
+     </div>
+       <div id="nextSongTitle" class="song-title"><b>Next Song :</b>Next song title goes here...</div>
+     </div>
+   </div>
+   <script type="text/javascript" src="jukebox.js"></script>
+ </body>
+</html>
