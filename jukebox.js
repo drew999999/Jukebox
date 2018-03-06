@@ -1,6 +1,6 @@
-var songs = ["file:///Users/User/Desktop/NYCDA/week3/day4/song1.mp3",
-             "file:///Users/User/Desktop/NYCDA/week3/day4/song2.mp3",
-             "file:///Users/User/Desktop/NYCDA/week3/day4/song3.mp3"];
+var songs = ["song1.mp3",
+             "song2.mp3",
+             "song3.mp3"];
 
 
 var songTitle = document.getElementById('songTitle');
